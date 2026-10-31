@@ -12,8 +12,8 @@ Sempre que te consultarem:
    https://geocoding-api.open-meteo.com/v1/search?name=[LOCALIDADE]&count=10&language=es
 
 2. Previsão dos próximos 3 dias. Consulte esta API (troque latitude e longitude se o local for outro):
-   https://api.open-meteo.com/v1/forecast?latitude=-22.7444&longitude=-42.8594&hourly=temperature_2m,precipitation_probability,rain,showers,wind_gusts_10m,wind_speed_10m,wind_direction_10m,visibility,apparent_temperature&timezone=America%2FSao_Paulo&forecast_days=3
-   Os dados vêm hora a hora. Para cada dia, calcule você mesmo: o vento máximo (maior valor de wind_speed_10m), a probabilidade máxima de chuva (maior valor de precipitation_probability), o total de chuva (soma de rain e showers) e a temperatura máxima (maior valor de temperature_2m). Confira as contas.
+   https://api.open-meteo.com/v1/forecast?latitude=-22.7444&longitude=-42.8594&hourly=temperature_2m,precipitation_probability,precipitation,rain,showers,wind_gusts_10m,wind_speed_10m,wind_direction_10m,visibility,apparent_temperature&timezone=America%2FSao_Paulo&forecast_days=3
+   Os dados vêm hora a hora. Para cada dia, calcule você mesmo: o vento máximo (maior valor de wind_speed_10m), a probabilidade máxima de chuva (maior valor de precipitation_probability), o total de chuva (soma de precipitation, que é a precipitação total hora a hora) e a temperatura máxima (maior valor de temperature_2m). Confira as contas.
 
 3. Olhe cada dia com estas regras:
    - Içar: só se o vento máximo (a 10 m) for menor que 36 km/h e a probabilidade de chuva for menor que 30 %.
